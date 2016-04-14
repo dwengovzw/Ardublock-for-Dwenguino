@@ -2,17 +2,19 @@
 A Graphical Programming Language for Dwenguino
 
 Prerequisites: Arduino IDE and Maven tool 
-	Install Arduino IDE https://www.arduino.cc/en/Main/Software
-	Install Maven https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+	1. Install Arduino IDE https://www.arduino.cc/en/Main/Software
+	2. Install Maven https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 Included with Specific Dwenguino modules as follows,
-	LEDS -  Control 8 bit array LEDs 
-	DC Motor - Control 2 DC motor
-	LCD - Access LCD in Dwenguino
-	Sonar - Access ultrasonic sensor
-	Servo - Control 2 Servos 
-	Sensor Panel - Access sensor panel board(an extension board with Dwenguino)
-	Remote - Access TSOP1738 sensor output for Input from Universal TV remote (Sony protocol - tested with MEPL SONY TV REMOTE)
+
+	1. LEDS -  Control 8 bit array LEDs 
+	2. DC Motor - Control 2 DC motor
+	3. LCD - Access LCD in Dwenguino
+	4. Sonar - Access ultrasonic sensor
+	5. Servo - Control 2 Servos 
+	6. Sensor Panel - Access sensor panel board(an extension board with Dwenguino)
+	7. Remote - Access TSOP1738 sensor output for Input from Universal TV remote (Sony protocol - tested with MEPL SONY TV REMOTE)
 
 Check here on how to use the blocks - http://www.dwengo.org/ArduBlock
 
