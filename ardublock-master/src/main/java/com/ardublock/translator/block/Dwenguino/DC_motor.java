@@ -49,7 +49,6 @@ public class DC_motor extends TranslatorBlock
 			
 		String ret = "\t" + MotorName + ".setSpeed(" + Speed + ");\n";
 		translator.addDefinitionCommand(MotorDeclare);
-		translator.addHeaderFile("Dwenguino.h");
         translator.addHeaderFile("DwenguinoMotor.h"); // the motor library
 		return ret;
 		}

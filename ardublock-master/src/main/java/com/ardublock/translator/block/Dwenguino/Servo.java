@@ -45,8 +45,7 @@ public class Servo extends TranslatorBlock {
 			translator.addSetupCommand("servo2.attach(SERVO_2);");
 			ret = "servo2.write(" + angle + ");\n";
 		}
-        translator.addHeaderFile("Dwenguino.h");
-        translator.addHeaderFile("Servo.h"); //servo library
+		translator.addHeaderFile("Servo.h"); // the motor library
 		return ret;
 	}
 

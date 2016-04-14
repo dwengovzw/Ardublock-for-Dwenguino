@@ -6083,7 +6083,85 @@
 <!-- 			</BlockConnectors>		 -->
 <!-- 		</BlockGenus>		 -->
 		<!-- end of DuinoEDU -->
+		
+<BlockGenus name="Sensor_LD1" kind="data" color="214 169 54" initlabel="bg.sensor_LD1" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>	
+<BlockGenus name="Sensor_LD2" kind="data" color="214 169 54" initlabel="bg.sensor_LD2" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
 
+
+<BlockGenus name="Sensor_OS1" kind="data" color="214 169 54" initlabel="bg.sensor_OS1" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_OS2" kind="data" color="214 169 54" initlabel="bg.sensor_OS2" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_OS3" kind="data" color="214 169 54" initlabel="bg.sensor_OS3" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_OS4" kind="data" color="214 169 54" initlabel="bg.sensor_OS4" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>	
+<BlockGenus name="Sensor_OS5" kind="data" color="214 169 54" initlabel="bg.sensor_OS5" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_OS6" kind="data" color="214 169 54" initlabel="bg.sensor_OS6" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>	
+<BlockGenus name="Sensor_OS7" kind="data" color="214 169 54" initlabel="bg.sensor_OS7" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_OS8" kind="data" color="214 169 54" initlabel="bg.sensor_OS8" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>		
+<BlockGenus name="Sensor_D1" kind="data" color="214 169 54" initlabel="bg.sensor_D1" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_D2" kind="data" color="214 169 54" initlabel="bg.sensor_D2" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+			</BlockGenus>
+<BlockGenus name="Sensor_DIFF_MODE" kind="data" color="214 169 54" initlabel="bg.sensor_DIFF_MODE" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>		
+<BlockGenus name="Sensor_ACTIVE_MODE" kind="data" color="214 169 54" initlabel="bg.sensor_ACTIVE_MODE" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+<BlockGenus name="Sensor_AMBIENT_MODE" kind="data" color="214 169 54" initlabel="bg.sensor_AMBIENT_MODE" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>	
+		
 		<!--**** linksprite_LinkerKit **** -->
 		<BlockGenus name="ls_10mmLEDModule" kind="command" color="135 206 235" initlabel="bg.ls_10mmLEDModule">
 			<description>
@@ -6661,6 +6739,63 @@
 			          <BlockConnector connector-type="number" connector-kind="plug" position-type="mirror"/>
 			</BlockConnectors>
 		</BlockGenus>
+		
+		<BlockGenus name="dwengo_sensor_LED" kind="command" color="255 20 147" initlabel="bg.dwengo_sensor_LED">
+			<description>
+				<text>Sensor LED Default</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.led">
+					<DefaultArg genus-name="Sensor_LD1" label="LD1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.state">
+					<DefaultArg genus-name="true" label="True" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/sensor_panel.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="dwengo_sensor_only" kind="data" color="47 79 79" initlabel="bg.dwengo_sensor_only">
+			<description>
+				<text>Sensor Only</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" label="cm" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.sense">
+					<DefaultArg genus-name="Sensor_OS1" label="OS1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.mode">
+					<DefaultArg genus-name="Sensor_DIFF_MODE" label="DIFF_MODE" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/sensor_panel.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="dwengo_tsop" kind="data" color="10 10 200" initlabel="bg.dwengo_tsop">
+			<description>
+				<text>Ultrasonic distance sensor</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" label="cm" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="sig#">
+					<DefaultArg genus-name="number" label="12" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/tsop.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
 		<!--***Makeblock***-->
 		<BlockGenus name="me_ultrasonic_sensor" kind="data" color="0 177 236" initlabel="bg.me_ultrasonic_sensor">
 			<description>
@@ -8775,6 +8910,7 @@
 		</BlockGenus>
 
 	</BlockGenuses>
+	
 
 	<BlockFamilies>
 		<BlockFamily>
@@ -8914,6 +9050,9 @@
 		<FamilyMember>dwengo_LCD_clear</FamilyMember>
 		<FamilyMember>dwengo_ultrasonic</FamilyMember>
 		<FamilyMember>dwengo_servo</FamilyMember>
+		<FamilyMember>dwengo_tsop</FamilyMember>
+		<FamilyMember>dwengo_sensor_LED</FamilyMember>
+		<FamilyMember>dwengo_sensor_only</FamilyMember>
 		</BlockFamily>
 <!-- 		<BlockFamily> -->
 <!-- 			<FamilyMember>ada_dc_motor_fwd</FamilyMember> -->
@@ -9144,6 +9283,27 @@
 <!-- 			<FamilyMember>DuinoEDU_A13</FamilyMember> -->
 <!-- 			<FamilyMember>DuinoEDU_A14</FamilyMember> -->
 <!-- 			<FamilyMember>DuinoEDU_A15</FamilyMember> -->
+		</BlockFamily>
+		<BlockFamily>
+		    <FamilyMember>Sensor_LD1</FamilyMember>
+		    <FamilyMember>Sensor_LD2</FamilyMember>
+		</BlockFamily>
+		<BlockFamily>
+		    <FamilyMember>Sensor_OS1</FamilyMember>
+		    <FamilyMember>Sensor_OS2</FamilyMember>
+		    <FamilyMember>Sensor_OS3</FamilyMember>
+		    <FamilyMember>Sensor_OS4</FamilyMember>
+		    <FamilyMember>Sensor_OS5</FamilyMember>
+		    <FamilyMember>Sensor_OS6</FamilyMember>
+		    <FamilyMember>Sensor_OS7</FamilyMember>
+		    <FamilyMember>Sensor_OS8</FamilyMember>
+		    <FamilyMember>Sensor_D1</FamilyMember>
+		    <FamilyMember>Sensor_D2</FamilyMember>
+		</BlockFamily>
+		<BlockFamily>
+		    <FamilyMember>Sensor_DIFF_MODE</FamilyMember>
+		    <FamilyMember>Sensor_ACTIVE_MODE</FamilyMember>
+		    <FamilyMember>Sensor_AMBIENT_MODE</FamilyMember>
 		</BlockFamily>
 		<BlockFamily>
 			<FamilyMember>Midi_C</FamilyMember>
@@ -9499,6 +9659,9 @@
 			    <BlockGenusMember>dwengo_LCD_clear</BlockGenusMember>
 			    <BlockGenusMember>dwengo_ultrasonic</BlockGenusMember>
 			    <BlockGenusMember>dwengo_servo</BlockGenusMember>
+			    <BlockGenusMember>dwengo_tsop</BlockGenusMember>
+			    <BlockGenusMember>dwengo_sensor_LED</BlockGenusMember>
+			    <BlockGenusMember>dwengo_sensor_only</BlockGenusMember>
 			</BlockDrawer>
 <!-- 			<BlockDrawer button-color="216 5 10" name="bd.adafruit" type="factory"> -->
 <!-- 			    <BlockGenusMember>ada_dc_motor_fwd</BlockGenusMember> -->
