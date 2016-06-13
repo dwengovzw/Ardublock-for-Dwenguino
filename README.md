@@ -23,7 +23,7 @@ Steps to generate and use ardublock-all.jar for Dwenguino
 	1. Download Zip of this repository (which will download as Ardublock-for-Dwenguino-master.zip)
 	2. Unzip the repository
 	3. Using command line navigate to Ardublock-for-Dwenguino-master\openblocks-master and type command "mvn clean install"
-	4. Then navigate to Ardublock-for-Dwenguino-master\ardublock-master and type command "mvn clean install"
+	4. Then navigate to Ardublock-for-Dwenguino-master\ardublock-master and type command "mvn validate" then "mvn clean install"
 	5. Then go to Ardublock-for-Dwenguino-master\ardublock-master\target\ and copy ardublock-all.jar
 	6. Then create folder Documents\Arduino\tools\ArduBlockTool\tool\ and paste ardublock-all.jar here.
 	7. Open Arduino IDE, goto Tools --> ArduBlock
